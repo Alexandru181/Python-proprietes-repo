@@ -12,3 +12,11 @@ class Person:
             print("Varsta invalida")
             return
         self._age = value
+p = Person(25)
+print(p.age) #citire(getter)
+
+p.age = 30      #modificare(setter)
+print(p.age)
+
+p.age = -5    #nu se modifica
+print(p.age)
